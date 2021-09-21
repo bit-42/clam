@@ -3,6 +3,7 @@ player = require("src.player")
 clam = require("src.clam")
 hud = require("src.hud")
 worker = require("src.worker")
+sound = require("src.sound")
 
 function distance (x1, y1, x2, y2)
   local dx = x1 - x2
@@ -45,6 +46,7 @@ function love.update(dt)
   player.update(dt)
   clam.update(dt)
   worker.update(dt)
+  sound.update(dt)
 end
 
 

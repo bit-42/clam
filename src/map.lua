@@ -1,7 +1,7 @@
 local map = {}
 
 local tick_timer = 0
-local tick_timer_max = 1
+local tick_timer_max = 2
 
 map.effect = false
 
