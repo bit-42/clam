@@ -73,12 +73,14 @@ function map.load()
       map.map[y][x] = block
     end
   end
+end
 
+function map.show_trophy()
   -- make trophy
   local t = {}
-  t.char = "T"
-  t.bg = "BROWN"
-  t.fg = "GREEN-L"
+  t.char = "C"
+  t.bg = "YELLOW"
+  t.fg = "BLUE-L"
   t.type = "trophy"
   t.collide = false
   t.x = 38
@@ -197,6 +199,7 @@ function map.collide(x, y, dir)
   if block.type == "trophy" then
     player.win = true
     player.multiplier = 100
+    song:stop()
   end
 
   if player.sacred then

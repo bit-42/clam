@@ -45,7 +45,10 @@ function hud.load()
     end
   end)
 
-  hud.add_shop("Sacred", 10000, 1, "8", function() player.sacred = true end)
+  hud.add_shop("Sacred", 1, 1, "8", function()
+    player.sacred = true
+    map.show_trophy()
+  end)
 end
 
 
