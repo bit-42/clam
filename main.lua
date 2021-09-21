@@ -22,7 +22,7 @@ colors["BROWN"] = {102/255, 68/255, 0}
 colors["WHITE"] = {1, 1, 1}
 colors["BLACK"] = {0, 0, 0}
 
-song = love.audio.newSource("assets/clam.wav", "stream")
+song = love.audio.newSource("assets/calm.wav", "stream")
 song:setLooping(true)
 song:play()
 
