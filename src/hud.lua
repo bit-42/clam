@@ -45,7 +45,7 @@ function hud.load()
     end
   end)
 
-  hud.add_shop("Sacred", 5000, 1, "8", function()
+  hud.add_shop("Sacred", 10000, 1, "8", function()
     player.sacred = true
     map.show_trophy()
   end)
@@ -122,6 +122,10 @@ function hud.keyreleased(key)
           v.used = v.used + 1
           player.score = player.score - v.price
           v.callback()
+
+          -- play shop sound
+          buy:stop()
+          buy:play()
         end
       end
     end

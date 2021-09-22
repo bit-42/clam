@@ -30,6 +30,9 @@ song:play()
 point = love.audio.newSource("assets/point.wav", "static")
 point:setVolume(0.2)
 
+buy = love.audio.newSource("assets/shop.wav", "static")
+buy:setVolume(0.2)
+
 function love.load()
   local font = love.graphics.newFont("assets/bescii.ttf", 24)
   love.graphics.setFont(font)
