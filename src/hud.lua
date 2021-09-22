@@ -36,7 +36,7 @@ function hud.load()
   end)
 
   hud.add_shop("Robot Speed", 200, 5, "7", function()
-    worker.timer_max = worker.timer_max / 2
+    worker.timer_max = worker.timer_max / 1.2
 
     for i,v in ipairs(hud.shop) do
       if v.name == "Robot Speed" then
@@ -139,6 +139,11 @@ function hud.keyreleased(key)
       map.back = 1
       map.front = 1
     end
+  end
+
+  -- DEBUG
+  if key == "f2" then
+    player.score = 100000
   end
 end
 
