@@ -51,6 +51,7 @@ function love.update(dt)
   clam.update(dt)
   worker.update(dt)
   sound.update(dt)
+  hud.update(dt)
 end
 
 
@@ -58,8 +59,8 @@ function love.draw()
   map.draw()
   player.draw()
   -- clam.draw()
-  hud.draw()
   worker.draw()
+  hud.draw()
 end
 
 

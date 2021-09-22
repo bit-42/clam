@@ -200,6 +200,15 @@ function map.collide(x, y, dir)
     player.win = true
     player.multiplier = 100
     song:stop()
+
+    local st = hud.message_timer
+
+    hud.add_message("Finally...", st, st+3)
+    hud.add_message("I won't lose you again...", st+3, st+6)
+    hud.add_message("Oh no!", st+6, st+9)
+    hud.add_message("Something isn't right...", st+9, st+12)
+    hud.add_message("THANKS FOR PLAYING!", st+12, st+15)
+    hud.add_message("CLAM 2 COMING SOON!!!", st+18, st+28)
   end
 
   if player.sacred then
