@@ -31,7 +31,7 @@ Inside the box you also found a pearlescent clam that glowed in the dark. While 
 
 It was nearly impossible to get someone holding the clam to let it go or to do much else. Every night, the clam holder would disappear and later you discovered that they'd return after having gone and found fruit on the island for nourishment. A Holder could not take his eyes off the clam, it seemed. No one knew what it was like for the Holder because when the clam was finally ripped away from their hands they would not speak and seemed to not respond to anything said to them. They were lost.
 
-You decided to let your companion, RXO-47, hold the clam because machine people were not affected by the clams mysterious powers. One day your curiosity got the better of you. While your crew was away you opened the container holding the clam and held it close to examine it.
+You decided to let your companion, RXO-42, hold the clam because machine people were not affected by the clams mysterious powers. One day your curiosity got the better of you. While your crew was away you opened the container holding the clam and held it close to examine it.
 
 Everything went dark. You woke up later, very hungry and alone on the island. Your crew, your companion and the clam was gone. Everything from your past began to fade from memory and you desired only one thing... The clam.
 
