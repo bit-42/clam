@@ -13,6 +13,10 @@ function player.load()
   player.win = false
   player.win_timer = 0
   player.win_sign = false
+
+  player.moving = "none"
+  player.move_timer = 0
+  player.move_timer_max = 0.25
 end
 
 
@@ -24,6 +28,17 @@ function player.update(dt)
       player.win_sign = not player.win_sign
 
       player.win_timer = 0
+    end
+  end
+
+  -- continuous movement
+  if player.moving ~= "none" then
+    player.move_timer = player.move_timer + dt
+
+    if player.move_timer >= player.move_timer_max then
+      player.move(player.moving)
+
+      player.move_timer = 0
     end
   end
 end
@@ -63,25 +78,44 @@ end
 
 
 function player.keypressed(key)
+  if key == "a" then
+    player.moving = "LEFT"
+  end
 
+  if key == "d" then
+    player.moving = "RIGHT"
+  end
+
+  if key == "w" then
+    player.moving = "UP"
+  end
+
+  if key == "s" then
+    player.moving = "DOWN"
+  end
 end
 
 
 function player.keyreleased(key)
-  if key == "a" then
-    player.move("LEFT")
-  end
+  player.moving = "none"
 
-  if key == "d" then
-    player.move("RIGHT")
-  end
+  if player.move_timer > 0 then
+    if key == "a" then
+      player.move("LEFT")
+    end
 
-  if key == "w" then
-    player.move("UP")
-  end
+    if key == "d" then
+      player.move("RIGHT")
+    end
 
-  if key == "s" then
-    player.move("DOWN")
+    if key == "w" then
+      player.move("UP")
+    end
+
+    if key == "s" then
+      player.move("DOWN")
+    end
+    player.move_timer = 0
   end
 end
 

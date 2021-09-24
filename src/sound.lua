@@ -1,10 +1,10 @@
 local sound = {}
 
 sound.waves = {}
-sound.waves[1] = love.audio.newSource("assets/waves/wave-1.wav", "static")
-sound.waves[2] = love.audio.newSource("assets/waves/wave-2.wav", "static")
-sound.waves[3] = love.audio.newSource("assets/waves/wave-3.wav", "static")
-sound.waves[4] = love.audio.newSource("assets/waves/wave-4.wav", "static")
+sound.waves[1] = love.audio.newSource("assets/waves/wave-1.ogg", "static")
+sound.waves[2] = love.audio.newSource("assets/waves/wave-2.ogg", "static")
+sound.waves[3] = love.audio.newSource("assets/waves/wave-3.ogg", "static")
+sound.waves[4] = love.audio.newSource("assets/waves/wave-4.ogg", "static")
 
 -- set volume for waves
 for i,v in ipairs(sound.waves) do

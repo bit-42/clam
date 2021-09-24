@@ -23,14 +23,14 @@ colors["BROWN"] = {102/255, 68/255, 0}
 colors["WHITE"] = {1, 1, 1}
 colors["BLACK"] = {0, 0, 0}
 
-song = love.audio.newSource("assets/calm.wav", "stream")
+song = love.audio.newSource("assets/calm.ogg", "stream")
 song:setLooping(true)
 song:play()
 
-point = love.audio.newSource("assets/point.wav", "static")
+point = love.audio.newSource("assets/point.ogg", "static")
 point:setVolume(0.2)
 
-buy = love.audio.newSource("assets/shop.wav", "static")
+buy = love.audio.newSource("assets/shop.ogg", "static")
 buy:setVolume(0.2)
 
 function love.load()
@@ -65,7 +65,7 @@ end
 
 
 function love.keypressed(key)
-
+  player.keypressed(key)
 end
 
 
