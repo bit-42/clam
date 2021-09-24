@@ -209,7 +209,7 @@ function map.collide(x, y, dir)
     hud.add_message("Something isn't right...", st+9, st+12)
     hud.add_message("THANKS FOR PLAYING!", st+12, st+15)
     hud.add_message("CLAM 2 COMING SOON!!!", st+18, st+28)
-    hud.add_message("bit42-temp.github.io", st+28, st+38)
+    hud.add_message("bit-42.github.io", st+28, st+38)
   end
 
   if player.sacred then
